@@ -1,2 +1,3 @@
-# AlexNet-Paper-Implementation
-Implementation of the "ImageNet Classification with Deep Convolutional Neural Networks" paper.
+# CV-Paper-Implementations
+
+Computer vision paper implementations.
