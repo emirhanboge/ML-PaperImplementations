@@ -38,4 +38,6 @@ Each paper implementation is contained in its own directory within the repositor
 
 `vae` - [Auto-Encoding Variational Bayes](https://arxiv.org/abs/1312.6114) (ICLR 2014)
 
+`u-net` - [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/abs/1505.04597) (MICCAI 2015)
+
 `resnet` - [Deep Residual Learning for Image Recognition](https://arxiv.org/abs/1512.03385) (CVPR 2016)

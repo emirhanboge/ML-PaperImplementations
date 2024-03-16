@@ -37,3 +37,10 @@ The image below demonstrates the output of a Variational Autoencoder (VAE) train
 The purpose of this visualization is to show the VAE's capability in capturing the essential characteristics of the handwritten digits and to generate new data points that are nearly indistinguishable from the actual dataset.
 
 ![VAE Generated Digits](generated_images/epoch_9.png)
+
+## References 
+
+1. [Auto-Encoding Variational Bayes](https://arxiv.org/abs/1312.6114)
+2. [MNIST](http://yann.lecun.com/exdb/mnist/)
+3. [PyTorch](http://pytorch.org/)
+4. [Variational Autoencoder](https://en.wikipedia.org/wiki/Autoencoder#Variational_autoencoder_(VAE))
