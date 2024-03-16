@@ -6,15 +6,6 @@ Welcome to the CV-Paper-Implementations repository! This is a collection of comp
 
 This repository contains my implementations of various computer vision papers. Each implementation aims to replicate the results of the papers as closely as possible and is provided with a detailed explanation of the approach taken.
 
-## Table of Contents
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Papers Implemented](#papers-implemented)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
-
 ## Installation
 
 To set up a development environment to run the code, please follow these steps:
