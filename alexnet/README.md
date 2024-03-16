@@ -44,4 +44,3 @@ python train.py
 2. [ImageNet](http://www.image-net.org/)
 3. [PyTorch](http://pytorch.org/)
 4. [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html)
-```

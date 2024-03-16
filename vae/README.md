@@ -1,6 +1,6 @@
 # Auto-Encoding Variational Bayes
 
-This is a PyTorch implementation of the VAE model described in the paper [Auto-Encoding Variational Bayes](https://arxiv.org/abs/1312.6114) by Kingma and Welling. The model is trained on the MNIST dataset.
+This is a [PyTorch](http://pytorch.org/) implementation of the VAE model described in the paper [Auto-Encoding Variational Bayes](https://arxiv.org/abs/1312.6114) by Kingma and Welling. The model is trained on the MNIST dataset.
 
 ## Paper Review
 
