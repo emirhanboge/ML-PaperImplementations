@@ -4,7 +4,7 @@ This is a [PyTorch](http://pytorch.org/) implementation of the [U-Net: Convoluti
 
 ## Paper Review
 
-This paper was first introduced in the arXiv preprint archive in 2015. The authors of this paper are Olaf Ronneberger, Philipp Fischer, and Thomas Brox. The main contribution of this paper is the introduction of the U-Net architecture, which is a deep convolutional neural network that has an encoder-decoder structure. The architecture is designed for biomedical image segmentation tasks. The architecture is trained on the ISBI cell tracking challenge dataset and achieves state-of-the-art performance on the dataset. 
+This paper was first introduced in the Springer MICCAI in 2015. The authors of this paper are Olaf Ronneberger, Philipp Fischer, and Thomas Brox. The main contribution of this paper is the introduction of the U-Net architecture, which is a deep convolutional neural network that has an encoder-decoder structure. The architecture is designed for biomedical image segmentation tasks. The architecture is trained on the ISBI cell tracking challenge dataset and achieves state-of-the-art performance on the dataset. 
 
 ### Implementation
 
