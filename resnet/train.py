@@ -32,12 +32,16 @@ if __name__ == "__main__":
 
     # For demonstration purposes, we will use a subset of the dataset
     train_dataset.data = train_dataset.data[:1000]
-    train_dataset.targets = train_dataset.targets[:1000]    
+    train_dataset.targets = train_dataset.targets[:1000]
     test_dataset.data = test_dataset.data[:100]
     test_dataset.targets = test_dataset.targets[:100]
 
-    train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=32, shuffle=True, num_workers=4)
-    test_loader = torch.utils.data.DataLoader(test_dataset, batch_size=32, shuffle=False, num_workers=4)
+    train_loader = torch.utils.data.DataLoader(
+        train_dataset, batch_size=32, shuffle=True, num_workers=4
+    )
+    test_loader = torch.utils.data.DataLoader(
+        test_dataset, batch_size=32, shuffle=False, num_workers=4
+    )
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"Using device: {device}")
@@ -53,7 +57,9 @@ if __name__ == "__main__":
 
     for epoch in tqdm(range(10), desc="Epoch"):
         model.train()
-        for inputs, targets in tqdm(train_loader, leave=False, desc=f"Training batch {epoch}"):
+        for inputs, targets in tqdm(
+            train_loader, leave=False, desc=f"Training batch {epoch}"
+        ):
             inputs, targets = inputs.to(device), targets.to(device)
             optimizer.zero_grad()
             outputs = model(inputs)

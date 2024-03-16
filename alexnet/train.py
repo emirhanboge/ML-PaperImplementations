@@ -3,7 +3,7 @@ import os
 import torch
 import torchvision.datasets as datasets
 from torchvision import transforms
-from tqdm import tqdm 
+from tqdm import tqdm
 
 from alexnet import AlexNet
 
@@ -53,7 +53,9 @@ if __name__ == "__main__":
 
     for epoch in tqdm(range(10), desc="Epoch"):
         model.train()
-        for inputs, targets in tqdm(train_loader, leave=False, desc=f"Training batch {epoch}"):
+        for inputs, targets in tqdm(
+            train_loader, leave=False, desc=f"Training batch {epoch}"
+        ):
             inputs, targets = inputs.to(device), targets.to(device)
             optimizer.zero_grad()
             outputs = model(inputs)
