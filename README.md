@@ -13,12 +13,13 @@ To set up a development environment to run the code, please follow these steps:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/emirhanboge/cv-paper-implementations.git
+git clone https://github.com/emirhanboge/CV-Paper-Implementations.git
+```
 
 2. Navigate to the project directory:
 
 ```bash
-cd cv-paper-implementations
+cd CV-Paper-Implementations
 ```
 
 3. Install the required packages:
