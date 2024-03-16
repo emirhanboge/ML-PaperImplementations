@@ -33,4 +33,4 @@ Each paper implementation is contained in its own directory within the repositor
 
 ## Papers Implemented
 
-`alexnet\` - [ImageNet Classification with Deep Convolutional Neural Networks](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf) (NIPS 2012)
+`alexnet` - [ImageNet Classification with Deep Convolutional Neural Networks](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf) (NIPS 2012)
