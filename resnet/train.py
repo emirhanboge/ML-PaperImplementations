@@ -3,18 +3,17 @@ import os
 import torch
 import torchvision.datasets as datasets
 from torchvision import transforms
-from tqdm import tqdm 
+from tqdm import tqdm
 
-from alexnet import AlexNet
+# Import the ResNet model
+from resnet import resnet18, resnet34, resnet50, resnet101
 
 if __name__ == "__main__":
     data_transform = transforms.Compose(
         [
-            transforms.Resize((224, 224)),  # Resize the image to 256x256
-            transforms.ToTensor(),  # Convert the image to a tensor with pixels in the range [0, 1]
-            transforms.Normalize(
-                mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]
-            ),  # Normalize the image with the ImageNet specific values
+            transforms.Resize((224, 224)),  # Resize the image to 224x224
+            transforms.ToTensor(),
+            transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
         ]
     )
 
@@ -33,21 +32,22 @@ if __name__ == "__main__":
 
     # For demonstration purposes, we will use a subset of the dataset
     train_dataset.data = train_dataset.data[:1000]
-    train_dataset.targets = train_dataset.targets[:1000]
+    train_dataset.targets = train_dataset.targets[:1000]    
     test_dataset.data = test_dataset.data[:100]
     test_dataset.targets = test_dataset.targets[:100]
 
-    train_loader = torch.utils.data.DataLoader(
-        train_dataset, batch_size=32, shuffle=True, num_workers=4
-    )
-    test_loader = torch.utils.data.DataLoader(
-        test_dataset, batch_size=32, shuffle=False, num_workers=4
-    )
+    train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=32, shuffle=True, num_workers=4)
+    test_loader = torch.utils.data.DataLoader(test_dataset, batch_size=32, shuffle=False, num_workers=4)
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"Using device: {device}")
 
-    model = AlexNet(num_classes=10).to(device)
+    # Choose the ResNet model you want to use
+    model = resnet18(num_classes=10).to(device)
+    # model = resnet34(num_classes=10).to(device)
+    # model = resnet50(num_classes=10).to(device)
+    # model = resnet101(num_classes=10).to(device)
+
     criterion = torch.nn.CrossEntropyLoss()
     optimizer = torch.optim.SGD(model.parameters(), lr=0.01, momentum=0.9)
 

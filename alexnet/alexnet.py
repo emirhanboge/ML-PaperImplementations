@@ -1,11 +1,11 @@
 import torch.nn as nn
-import torch.nn.functional as F
 
 
 class AlexNet(nn.Module):
     def __init__(self, num_classes=1000):
         # Here we define the layers of the AlexNet model
         # These layers will be used to perform forward pass
+        # Input: 3x224x224 image
         super(AlexNet, self).__init__()
         self.conv1 = nn.Conv2d(
             3, 96, kernel_size=11, stride=4, padding=2
