@@ -22,4 +22,4 @@ You can find the loss function code in the `losses.py` file.
 
 The original image is a photo of Dalyan. The style image is a painting by Van Gogh. The transformed image is the result of combining the content of the original image with the style of the style image.
 
-![Dalyan](images/dalyan.png) ![Van Gogh](images/vangogh.png) ![Dalyan + Van Gogh](images/image_3000.png)
+![Dalyan](images/dalyan.png) ![Van Gogh](images/vangogh.png) ![Dalyan + Van Gogh](images/transferred/image_0.png/image_3000.png)
