@@ -11,7 +11,8 @@ This repository contains my implementations of various computer vision papers. E
 1. [alexnet](alexnet/) - [ImageNet Classification with Deep Convolutional Neural Networks](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf) (NIPS 2012)
 2. [vae](vae/) - [Auto-Encoding Variational Bayes](https://arxiv.org/abs/1312.6114) (ICLR 2014)
 3. [u-net](u-net/) - [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/abs/1505.04597) (MICCAI 2015)
-4. [resnet](resnet/) - [Deep Residual Learning for Image Recognition](https://arxiv.org/abs/1512.03385) (CVPR 2016)
+4. [neural-style-transfer](neural-style-transfer/) - [A Neural Algorithm of Artistic Style](https://arxiv.org/abs/1508.06576) (arXiv 2015)
+5. [resnet](resnet/) - [Deep Residual Learning for Image Recognition](https://arxiv.org/abs/1512.03385) (CVPR 2016)
 
 ## Installation
 
