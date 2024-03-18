@@ -14,13 +14,7 @@ Data augmentation is used to increase the size of the training dataset. The auth
 
 Encoder, contracting path, consists of two 3x3 convolutions that are followed by ReLU units and a 2x2 max pooling with stride 2. The decoder, expansive path, consists of an upsampling of the feature map followed by a 2x2 convolution. The feature map is then concatenated with the corresponding feature map from the contracting path. The concatenated feature map is then followed by two 3x3 convolutions and ReLU units. In the last layer, a 1x1 convolution is used to map each 64-component feature vector to the desired number of classes. In total there are 23 convolutional layers in the network.
 
-Softmax is defined as: 
-
-$$
-\sigma(x)_i = \frac{e^{x_i}}{\sum_{j=1}^{K} e^{x_j}}
-$$
-
-This is used to calculate the probability of each pixel belonging to a class. Since we try to segment the image into two classes, the probability of each pixel belonging to the class is calculated.
+Softmax is used to calculate the probability of each pixel belonging to a class. Since we try to segment the image into two classes, the probability of each pixel belonging to the class is calculated.
 
 U-Net implementation is available in the `u_net.py` file. In this implementation VOCSegmentation dataset is used to train the network. The dataset is available in the torchvision package. The dataset consists of images and masks. The images are the input to the network and the masks are the ground truth. The masks are used to calculate the loss and to evaluate the performance of the network.
 
