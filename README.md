@@ -2,10 +2,6 @@
 
 Welcome to the ML-PaperImplementations repository! This is a collection of machine learning paper implementations, intended as a resource for researchers, students, and enthusiasts in the field.
 
-## Description
-
-This repository contains my implementations of various computer vision papers. Each implementation aims to replicate the results of the papers as closely as possible and is provided with a detailed explanation of the approach taken.
-
 ## Papers Implemented
 
 1. [alexnet](alexnet/) - [ImageNet Classification with Deep Convolutional Neural Networks](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf) (NIPS 2012)
