@@ -16,7 +16,9 @@ Encoder, contracting path, consists of two 3x3 convolutions that are followed by
 
 Softmax is defined as: 
 
+$$
 \sigma(x)_i = \frac{e^{x_i}}{\sum_{j=1}^{K} e^{x_j}}
+$$
 
 This is used to calculate the probability of each pixel belonging to a class. Since we try to segment the image into two classes, the probability of each pixel belonging to the class is calculated.
 
