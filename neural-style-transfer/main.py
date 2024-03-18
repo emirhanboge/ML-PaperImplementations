@@ -14,7 +14,7 @@ def main():
     else:
         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"Using device: {device}")
-    
+
     content_img = utils.load_image("images/xxx.png", device)
     style_img = utils.load_image("images/xxxbr.png", device)
 

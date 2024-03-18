@@ -32,18 +32,18 @@ def load_image(image_path, device):
 def save_image(tensor, filename):
     # Clone the tensor to not do changes in-place
     image = tensor.cpu().clone().squeeze(0)
-    
+
     # Denormalize the image
     denormalize = transforms.Normalize(
-        mean=[-0.485/0.229, -0.456/0.224, -0.406/0.225],
-        std=[1/0.229, 1/0.224, 1/0.225]
+        mean=[-0.485 / 0.229, -0.456 / 0.224, -0.406 / 0.225],
+        std=[1 / 0.229, 1 / 0.224, 1 / 0.225],
     )
-    
+
     image = denormalize(image)
-    
+
     # Clip the values to be between 0 and 1 (image data format)
     image = torch.clamp(image, 0, 1)
-    
+
     # Convert to a PIL image and save
     image = transforms.ToPILImage()(image)
     image.save(filename)
