@@ -1,6 +1,6 @@
-# CV-Paper-Implementations
+# ML-PaperImplementations
 
-Welcome to the CV-Paper-Implementations repository! This is a collection of computer vision paper implementations, intended as a resource for researchers, students, and enthusiasts in the field.
+Welcome to the ML-PaperImplementations repository! This is a collection of machine learning paper implementations, intended as a resource for researchers, students, and enthusiasts in the field.
 
 ## Description
 
